@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "StartCraft",
+  "version": "1.0",
+  "description": "StartCraft - description",
+  "homepage_url": "https://github.com/barthwlwmyw/StartCraft",
+  "icons": {
+    "48": "icons/start-craft-48.png"
+  },
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "icons/start-craft-48.png",
+    "default_title": "StartCraft",
+    "default_popup": "popup/index.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg"
+  ],
+
+  "chrome_url_overrides" : {
+    "newtab": "homepage.html"
+  },
+  "chrome_settings_overrides" : {
+  "homepage": "homepage.html"
+ }
+}
